@@ -1,0 +1,175 @@
+@import "../../styles/Variable.scss";
+
+.footer {
+    width: 100%;
+    height: 20rem;
+    background: #e6fcdd;
+    border-top: 1px solid #0e180e;
+    padding: .5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include breakpoint (md) {
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @include breakpoint (md) {
+            width: 100%;
+            height: max-content;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: .9rem;
+        }
+
+        &__box {
+            width: 18rem;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            font-family: $Poppins;
+            gap: 1rem;
+            padding: 0.5rem;
+            color: #0e180e;
+
+            @include breakpoint (md) {
+                gap: 0.2rem;
+                width: 100%;
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+
+                @include breakpoint (md) {
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+
+            }
+            &__logo {
+
+                font-family: $MontiCarlo;
+                letter-spacing: 3px;
+
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #0e180e;
+
+                    &::first-letter {
+                        color: red;
+                    }
+
+                    @include breakpoint (md) {
+                        font-size: 2rem;
+                    }
+
+                }
+
+            }
+
+
+            &__socials {
+                ul {
+
+
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    a {
+                        text-decoration: none;
+                        margin: .5rem;
+                        font-size: 1.5rem;
+                        color: #364d365e;
+                        transition: .5s;
+
+                        &:hover {
+                            color: #0e180e;
+                        }
+
+                        @include breakpoint (md) {
+                            font-size: .9rem;
+                        }
+
+                    }
+                }
+
+            }
+
+            h4 {
+                font-weight: 400;
+                font-size: .9rem;
+
+                @include breakpoint (md) {
+                    font-size: .9rem;
+                }
+            }
+
+            &__product {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                line-height: 1.5rem;
+
+                p {
+                    cursor: pointer;
+                    transition: 0.5s;
+                    color: #0e180e;
+                    font-size: .9rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    @include breakpoint (md) {
+                        font-size: .9rem;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    &__copy {
+        margin-top: .5rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .7rem;
+        color: black;
+        padding-bottom: 1rem;
+
+        @include breakpoint (md) {
+            width: 100%;
+            font-size: .7rem;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}

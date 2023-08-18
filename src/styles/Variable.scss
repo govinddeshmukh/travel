@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+
+$Poppins: 'Poppins', sans-serif;
+$MontiCarlo: 'MonteCarlo', cursive;
+$navLink: 'Montserrat', sans-serif;
+
+// colors
+$dark: rgb(29, 29, 29);
+$light: #fff;
+$primary: #a2a2f6;
+$bg: rgb(244, 244, 255);
+
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+
+// border-radius
+$borderRadius: 12px;
+
+
+// headerHeight
+$headerHeight: 60px;
+
+
+@mixin breakpoint($point) {
+    @if $point ==md {
+        //480px
+
+        @media (max-width:480px) {
+
+            @content;
+        }
+    }
+
+    @if $point ==lg {
+        //768px
+
+        @media (max-width:768px) {
+            @content;
+        }
+    }
+}

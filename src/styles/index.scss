@@ -1,0 +1,33 @@
+@import "./Variable.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    width: 1.5rem;
+    
+ }
+  
+  ::-webkit-scrollbar-track{
+    background: #0e180e;
+}
+  ::-webkit-scrollbar-thumb{
+    background-color: #e6fcdd;
+    border-radius: 1rem;
+    border: 0.7rem solid transparent;
+    background-clip: content-box;
+  }
