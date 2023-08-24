@@ -5,12 +5,14 @@ import Contact from "./pages/Contact/Contact"
 import About from "./pages/About/About"
 import Blog from "./pages/Blog/Blog"
 import Register from "./pages/Register/Register"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import ScrollToTop from "./components/ScrollTop"
 import Footer from "./components/Footer/Footer"
 function App() {
   return (
     <div>
-      <Router>
+      <Router>  
+          <ScrollToTop/>
         <NAV />
         <Routes>
           <Route path="/" element={<Home />}>Home</Route>
